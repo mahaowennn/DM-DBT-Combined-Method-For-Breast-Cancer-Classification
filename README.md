@@ -3,28 +3,11 @@ This repo is for paper "A Digital Mammograhpy and Digital Breast Tomosynthesis C
 
 ![image](https://github.com/user-attachments/assets/678a49b4-329b-499c-be01-76d171000a84)
 
-\begin{table}[t]
-\centering
-\caption{Results of Different Breast Cancer Classification Models and Inputs}
-\label{tab:cls_results} 
-\resizebox{0.5\textwidth}{!}{ 
-\begin{tabular}{c c c c c c c }
-\hline
- &Total& Mass & Cal. & FA. & AD. & Mass\&Cal  \\ \hline
-ResNet50\cite{he2016deep}& 0.813 & 0.839   & 0.766  & 0.489 & 0.517   & 0.969   \\
-DensNet121\cite{huang2017densely} &0.808& 0.812   & 0.732 & 0.652  & 0.433  & 0.932  \\
-ViT-T\cite{dosovitskiy2020image} &0.833 & 0.827  & 0.835 & 0.516  & 0.481  & 0.956   \\
-Swin-T\cite{liu2021swin} &0.845 & 0.839  & \textbf{\textcolor{red}{0.837}} & 0.522  & 0.483  & \textbf{\textcolor{red}{0.992}}   \\
-\hline
-Full DBT &0.785 & 0.804  & \textbf{\textcolor{blue}{0.532}} & \textbf{\textcolor{red}{0.621}}  & \textbf{\textcolor{red}{0.650}}  & 0.873   \\
-DBT Dynamic Image\cite{liang2019joint} & 0.814 & 0.831 & \textbf{\textcolor{blue}{0.562}} & 0.513  &  0.464 & 0.982   \\
-DBT Selected Frame & 0.822 & 0.853  & \textbf{\textcolor{blue}{0.572}} & 0.461  & 0.483  & 0.972   \\
-\hline。
-DM+Full DBT &0.845 & 0.854  & 0.760 & 0.527  & 0.550  & 0.964   \\
-DM+DBT Dynamic Image\cite{liang2019joint} & 0.851 & 0.841  & 0.723 & 0.513  & 0.564  & 0.982   \\
-DM+DBT Selected Frame & \textbf{\textcolor{red}{0.868}} & \textbf{\textcolor{red}{0.861}}  & 0.784 & 0.604  & 0.600  & 0.989   \\
+# MammoLesion Datasets
+The MammoLesion dataset comprises 2082 lesions from 1120 patients, with both DM and DBT examinations. All data were retrospectively collected from patients at Ruijin Hospital, Shanghai Jiaotong University School of Medicine, using a United Imaging mammography machine. Experienced radiologist annotated the lesion regions and types, while pathology labels were based on biopsy results: 670 lesions are benign, and 1412 are malignant. Lesions may include both CC and MLO views or just one, depending on visibility. To our knowledge, the MammoLesion dataset is the largest lesion-level breast cancer classification dataset, including both DM and DBT images.
 
-\hline
-\end{tabular}
-}
-\end{table}
+![image](https://github.com/user-attachments/assets/03657ec7-5eac-48d8-aa84-0db741f45352)
+![image](https://github.com/user-attachments/assets/a827f2fa-30cf-4240-9779-8d3c47740c5d)
+
+# GradCAM 
+![image](https://github.com/user-attachments/assets/071fb8eb-f799-4543-87dd-ff7a4e24570c)
