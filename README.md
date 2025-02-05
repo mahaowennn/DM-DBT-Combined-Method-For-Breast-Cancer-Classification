@@ -2,6 +2,7 @@
 This repo is for paper "A Digital Mammograhpy and Digital Breast Tomosynthesis Combined Method for Breast Cancer Classification", and we will open source the datasets and annotations used in our article.
 
 Our paper has been accpted by BIBM2024.
+paper: https://ieeexplore.ieee.org/abstract/document/10822000
 
 ![image](https://github.com/user-attachments/assets/678a49b4-329b-499c-be01-76d171000a84)
 
